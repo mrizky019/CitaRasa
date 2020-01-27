@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView_Main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imgItemPhoto"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            tools:src="@color/colorAccent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/imgItemPhoto"
+            android:layout_toRightOf="@id/imgItemPhoto"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Foods_Name" />
+
+        <ImageView
+            android:id="@+id/imgPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewFoodName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="4dp"
+            android:layout_toEndOf="@id/imgItemPhoto"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_place_black_24dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewFoodPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewFoodName"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/imgPlace"
+            android:gravity="start"
+            tools:text="Food_Place" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewFoodDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layoutButton"
+            android:layout_below="@id/imgPlace"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/imgItemPhoto"
+            android:ellipsize="end"
+            android:maxLines="3"
+            tools:text="Food_Description" />
+
+        <LinearLayout
+            android:id="@+id/layoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/imgItemPhoto"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnSetFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="#00000000"
+                android:src="@drawable/ic_favorite_border_unlike_24dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

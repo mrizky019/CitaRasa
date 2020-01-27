@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CitaRasa</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="general_info">Informasi umum</string>
+    <string name="general">General</string>
+    <string name="nutritional_info">Informasi Nutrisi</string>
+    <string name="nutritional">Nutritional</string>
+    <string name="calories">Kalori</string>
+    <string name="fat">Lemak</string>
+    <string name="carbo">Karbohidrat</string>
+    <string name="protein">Protein</string>
+    <string name="recipe">Recipe</string>
+    <string name="recipe_info">Informasi Resep</string>
+    <string name="bahan">Bahan - Bahan</string>
+    <string name="step">Langkah- Langkah</string>
+    <string name="name">Muhamad Rizky</string>
+    <string name="vision">I wanna be a programmer</string>
+    <string name="email_value">mrizky019@gmail.com</string>
+    <string name="school_value">Universitas Esa Unggul</string>
+    <string name="home_value">Kota Tangerang</string>
+    <string name="birthday_value">06 April 1998</string>
+</resources>
